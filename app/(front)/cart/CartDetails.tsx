@@ -19,11 +19,16 @@ export default function CartDetails() {
   return (
     <>
       {items.length === 0 ? (
-        <div className="my-4">
+        <div className="mt-8">
           Cart is empty
-          <p className="mt-10">
-            <Link href="/"> Go shopping</Link>
-          </p>
+          <div className="mt-20">
+            <p className="hover:text-purple-700">
+              <Link href="/search?category=all&q=">Back to Categories</Link>
+            </p>
+            <p className="hover:text-purple-700 my-2">
+              <Link href="/">Back to Home</Link>
+            </p>
+          </div>
         </div>
       ) : (
         <div className="grid md:grid-cols-4 md:gap-5">
@@ -98,8 +103,13 @@ export default function CartDetails() {
               </div>
             </div>
           </div>
-          <div className="my-6 text-2xs font-mono hover:text-purple-700">
-            <Link href="/"> Back to Products </Link>
+          <div className="my-2">
+            <p className="hover:text-purple-700">
+              <Link href="/search?category=all&q=">Back to Categories</Link>
+            </p>
+            <p className="hover:text-purple-700 my-2">
+              <Link href="/">Back to Home</Link>
+            </p>
           </div>
         </div>
       )}

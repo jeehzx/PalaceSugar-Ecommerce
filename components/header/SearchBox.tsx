@@ -1,5 +1,6 @@
 'use client'
 import { useSearchParams } from 'next/navigation'
+import { IoMdSearch } from 'react-icons/io'
 import useSWR from 'swr'
 
 export const SearchBox = () => {
@@ -11,27 +12,18 @@ export const SearchBox = () => {
 
   if (error) return error.message
   if (!categories) return 'Loading...'
-
   return (
-    <form action="/search" method="GET">
+    <form action="/search" method="GET" className="gap-2">
       <div className="join">
-        <select
-          name="category"
-          defaultValue={category}
-          className="join-item select select-bordered "
-        >
-          <option value="all">All</option>
-          {categories.map((c: string) => (
-            <option key={c}>{c}</option>
-          ))}
-        </select>
         <input
-          className="join-item input input-bordered  w-48"
+          className="join-item input input-bordered w-48"
           placeholder="Search"
           defaultValue={q}
           name="q"
         />
-        <button className="join-item btn">Search</button>
+        <button className="join-item btn">
+          <IoMdSearch size={24} />
+        </button>
       </div>
     </form>
   )

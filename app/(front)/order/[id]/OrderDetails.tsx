@@ -140,7 +140,7 @@ export default function OrderDetails({
                           </span>
                         </Link>
                       </td>
-                      <td>{item.qty}</td>
+                      <td> {item.qty} </td>
                       <td>${item.price}</td>
                     </tr>
                   ))}
