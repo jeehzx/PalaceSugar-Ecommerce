@@ -105,14 +105,7 @@ const Form = () => {
             </button>
           </div>
         </form>
-        <div className="divider"> OR </div>
-        <button
-          onClick={() => signIn('github', { callbackUrl })}
-          className="btn"
-        >
-          Continue with Github
-        </button>
-        <div className="divider"> </div>
+        <div className="divider"></div>
         <div>
           Need an account?{' '}
           <Link className="link" href={`/register?callbackUrl=${callbackUrl}`}>

@@ -6,7 +6,25 @@ const config: Config = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
-  theme: {},
   plugins: [require('daisyui')],
+  daisyui: {
+    themes: [
+      {
+        light: {
+          ...require('daisyui/src/theming/themes')['light'],
+          primary: '#fbbf24',
+        },
+        dark: {
+          ...require('daisyui/src/theming/themes')['dark'],
+          primary: '#fbbf24',
+          '.toaster-con': {
+            'background-color': 'black',
+            color: 'white',
+          },
+        },
+      },
+    ],
+  },
+  darkMode: ['class', '["dark"]'],
 }
 export default config
