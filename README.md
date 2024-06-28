@@ -1,48 +1,30 @@
-E-commerce (PalaceSugar) <br/>
-Este é um projeto de e-commerce desenvolvido utilizando Next.js, MongoDB, Cloudinary, DaisyUI, Zustand, Bcrypt.js e NextAuth. O objetivo deste projeto é criar uma plataforma online para venda de produtos de moda e decoração de casa de maneira prática e eficiente.
+## E-commerce Website (PalaceSugar)
+I'm beginner web dev, this is an e-commerce project developed using Next.js, MongoDB, Cloudinary, DaisyUI, Zustand, Bcrypt.js, and NextAuth. The goal of this project is to create an online platform for selling.
 
-Tecnologias Utilizadas?
-Next.js 14: Framework React para renderização do lado do servidor (SSR) e geração de sites estáticos (SSG).
-MongoDB: Banco de dados NoSQL para armazenamento de informações de produtos, usuários e pedidos.
-Cloudinary: Serviço de hospedagem de imagens e gerenciamento de ativos estáticos.
-DaisyUI: Framework CSS para Tailwind CSS que facilita a criação de interfaces responsivas e estilizadas.
-Zustand: Biblioteca para gerenciamento de estado global em aplicações React de forma simples e eficiente.
-Bcrypt.js: Biblioteca para criptografar senhas de usuário antes de armazená-las no banco de dados.
-NextAuth: Biblioteca de autenticação para Next.js que suporta vários provedores de autenticação (OAuth, JWT, etc.).
-Funcionalidades Principais
-Autenticação de Usuários: Registro e login seguros utilizando NextAuth.
-Catálogo de Produtos: Exibição de produtos de moda e decoração com imagens hospedadas no Cloudinary.
-Carrinho de Compras: Funcionalidade para adicionar produtos ao carrinho e realizar pedidos.
-Gestão de Estado: Utilização do Zustand para gerenciar o estado global da aplicação de forma eficiente.
-Segurança: Senhas dos usuários são criptografadas utilizando Bcrypt.js antes de serem armazenadas no MongoDB.
-<br/>
-- Como Executar o Projeto
-  Pré-requisitos
-  Node.js e npm instalados globalmente.
-  Conta no MongoDB e Cloudinary para configurar as chaves de acesso.
-  Instalação
+## Technologies Used
 
-1. Clone o repositório:
-   bash
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
-   cd nome-do-repositorio
+- **Next.js 14**: React framework for server-side rendering (SSR) and static site generation (SSG).
+- **MongoDB**: NoSQL database for storing product, user, and order information.
+- **Cloudinary**: Image hosting and asset management service.
+- **DaisyUI**: CSS framework for Tailwind CSS that facilitates creating responsive and stylish interfaces.
+- **Zustand**: Library for managing global state in React applications simply and efficiently.
+- **Bcrypt.js**: Library for hashing user passwords before storing them in the database.
+- **NextAuth**: Authentication library for Next.js supporting various authentication providers (OAuth, JWT, etc.).
 
-2. Instale as dependências:
+## Main Features
 
-bash
-npm install
+- **User Authentication**: Secure registration and login using NextAuth.
+- **Product Catalog**: Display of fashion and home decor products with images hosted on Cloudinary.
+- **Shopping Cart**: Functionality to add products to the cart and place orders.
+- **State Management**: Use of Zustand to manage the application's global state efficiently.
+- **Security**: User passwords are hashed using Bcrypt.js before being stored in MongoDB.
 
-3. Configure as variáveis de ambiente:
+## Clone the Repository
 
-Renomeie o arquivo .env.example para .env e preencha com suas credenciais do MongoDB e Cloudinary.
+   ```shell
+    $ git clone git@github.com:jeehzx/PalaceSugar.git
+    $ cd PalaceSugar
+   ```
 
-4. Executando o Projeto
-   bash
-   npm run dev
-
-Acesse http://localhost:3000 no seu navegador para visualizar o projeto.
-<br/>
-<br/>
-Contribuições
-<br/>
-Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request com melhorias ou correções.
+## Contributions
+Contributions are welcome! Feel free to open an issue or submit a pull request with improvements or bug fixes.
