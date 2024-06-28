@@ -5,7 +5,6 @@ import Providers from '@/components/Providers'
 import Sidebar from '@/components/Sidebar'
 import DrawerButton from '@/components/DrawerButton'
 import { FaAngleUp } from 'react-icons/fa'
-import Image from 'next/image'
 
 const inter = Inter({ subsets: ['latin'] })
 

@@ -1,5 +1,5 @@
 ## E-commerce Website (PalaceSugar)
-I'm beginner web dev, this is an e-commerce project developed using Next.js, MongoDB, Cloudinary, DaisyUI, Zustand, Bcrypt.js, and NextAuth. The goal of this project is to create an online platform for selling.
+I'm beginner web dev, this is an e-commerce project developed ugitsing Next.js, MongoDB, Cloudinary, DaisyUI, Zustand, Bcrypt.js, and NextAuth. The goal of this project is to create an online platform for selling.
 
 ## Technologies Used
 
