@@ -56,7 +56,7 @@ export default function Products() {
   return (
     <div>
       <div className="flex justify-between items-center">
-        <h1 className="py-4 text-2xl">Products</h1>
+        <h1 className="py-4 text-2xl font-bold">Products</h1>
         <button
           disabled={isCreating}
           onClick={() => createProduct()}
@@ -71,13 +71,13 @@ export default function Products() {
         <table className="table table-zebra">
           <thead>
             <tr>
-              <th>id</th>
-              <th>name</th>
-              <th>price</th>
-              <th>category</th>
-              <th>count in stock</th>
-              <th>rating</th>
-              <th>actions</th>
+              <th className="text-pink-700">id</th>
+              <th className="text-pink-700">name</th>
+              <th className="text-pink-700">price</th>
+              <th className="text-pink-700">category</th>
+              <th className="text-pink-700">count in stock</th>
+              <th className="text-pink-700">rating</th>
+              <th className="text-pink-700">actions</th>
             </tr>
           </thead>
           <tbody>
@@ -93,7 +93,7 @@ export default function Products() {
                   <Link
                     href={`/admin/products/${product._id}`}
                     type="button"
-                    className="btn btn-ghost btn-sm"
+                    className="btn btn-ghost btn-sm hover:text-pink-700"
                   >
                     Edit
                   </Link>
@@ -101,7 +101,7 @@ export default function Products() {
                   <button
                     onClick={() => deleteProduct({ productId: product._id! })}
                     type="button"
-                    className="btn btn-ghost btn-sm"
+                    className="btn btn-ghost btn-sm hover:text-pink-700"
                   >
                     Delete
                   </button>

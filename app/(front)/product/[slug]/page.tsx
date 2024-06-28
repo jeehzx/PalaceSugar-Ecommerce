@@ -48,7 +48,7 @@ export default async function ProductDetails({
         <div>
           <ul className="space-y-4">
             <li>
-              <h1 className="text-xl">{product.name}</h1>
+              <h1 className="text-2xl font-bold">{product.name}</h1>
             </li>
             <li>
               <Rating
@@ -94,10 +94,10 @@ export default async function ProductDetails({
           </div>
         </div>
         <div className="my-2">
-          <p className="hover:text-purple-700">
+          <p className="hover:text-pink-700">
             <Link href="/search?category=all&q=">Back to Categories</Link>
           </p>
-          <p className="hover:text-purple-700 my-2">
+          <p className="hover:text-pink-700 my-2">
             <Link href="/">Back to Home</Link>
           </p>
         </div>

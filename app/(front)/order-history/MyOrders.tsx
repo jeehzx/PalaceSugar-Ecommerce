@@ -22,12 +22,12 @@ export default function MyOrders() {
     <table className="table">
       <thead>
         <tr>
-          <th>ID</th>
-          <th>DATE</th>
-          <th>TOTAL</th>
-          <th>PAID</th>
-          <th>DELIVERED</th>
-          <th>ACTION</th>
+          <th className="text-pink-700">ID</th>
+          <th className="text-pink-700">DATE</th>
+          <th className="text-pink-700">TOTAL</th>
+          <th className="text-pink-700">PAID</th>
+          <th className="text-pink-700">DELIVERED</th>
+          <th className="text-pink-700">ACTION</th>
         </tr>
       </thead>
       <tbody>
@@ -47,7 +47,11 @@ export default function MyOrders() {
                 : 'not delivered'}
             </td>
             <td>
-              <Link href={`/order/${order._id}`} passHref>
+              <Link
+                href={`/order/${order._id}`}
+                className="hover:text-pink-700"
+                passHref
+              >
                 Details
               </Link>
             </td>

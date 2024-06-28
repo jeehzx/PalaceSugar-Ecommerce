@@ -72,7 +72,7 @@ const Form = () => {
       <CheckoutSteps current={1} />
       <div className="max-w-sm mx-auto card bg-base-300 my-4">
         <div className="card-body">
-          <h1 className="card-tile">Shipping Address</h1>
+          <h1 className="card-tile text-pink-700 text-2xl">Shipping Address</h1>
           <form onSubmit={handleSubmit(formSubmit)}>
             <FormInput name="Full Name" id="fullName" required />
             <FormInput name="Address" id="address" required />
@@ -83,7 +83,7 @@ const Form = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="btn btn-primary w-full"
+                className="btn btn-primary w-full mt-2"
               >
                 {isSubmitting && (
                   <span className="loading loading-spinner"></span>

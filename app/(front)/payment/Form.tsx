@@ -26,7 +26,7 @@ const Form = () => {
       <CheckoutSteps current={2} />
       <div className="max-w-sm mx-auto card bg-base-300 my-4">
         <div className="card-body">
-          <h1 className="card-tile">Payment Method</h1>
+          <h1 className="card-tile text-pink-700 text-2xl">Payment Method</h1>
           <form onSubmit={handleSubmit}>
             {['PayPal', 'Credit / Debit Card', 'Cash On Delivery'].map(
               (payment) => (

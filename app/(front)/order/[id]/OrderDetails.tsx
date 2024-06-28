@@ -84,7 +84,7 @@ export default function OrderDetails({
         <div className="md:col-span-3">
           <div className="card bg-base-300">
             <div className="card-body">
-              <h2 className="card-title">Shipping Address</h2>
+              <h2 className="card-title text-pink-700">Shipping Address</h2>
               <p>{shippingAddress.fullName}</p>
               <p>
                 {shippingAddress.address}, {shippingAddress.city},{' '}
@@ -100,7 +100,7 @@ export default function OrderDetails({
 
           <div className="card bg-base-300 mt-4">
             <div className="card-body">
-              <h2 className="card-title">Payment Method</h2>
+              <h2 className="card-title text-pink-700">Payment Method</h2>
               <p>{paymentMethod}</p>
               {isPaid ? (
                 <div className="text-success">Paid at {paidAt}</div>
@@ -112,13 +112,13 @@ export default function OrderDetails({
 
           <div className="card bg-base-300 mt-4">
             <div className="card-body">
-              <h2 className="card-title">Items</h2>
+              <h2 className="card-title text-pink-700">Items</h2>
               <table className="table">
                 <thead>
                   <tr>
-                    <th>Item</th>
-                    <th>Quantity</th>
-                    <th>Price</th>
+                    <th className="text-pink-700">Item</th>
+                    <th className="text-pink-700">Quantity</th>
+                    <th className="text-pink-700">Price</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -153,7 +153,7 @@ export default function OrderDetails({
         <div>
           <div className="card bg-base-300">
             <div className="card-body">
-              <h2 className="card-title">Order Summary</h2>
+              <h2 className="card-title text-pink-700">Order Summary</h2>
               <ul>
                 <li>
                   <div className="mb-2 flex justify-between">
@@ -181,7 +181,7 @@ export default function OrderDetails({
                 </li>
 
                 {!isPaid && paymentMethod === 'PayPal' && (
-                  <li>
+                  <li className="my-4">
                     <PayPalScriptProvider
                       options={{ clientId: paypalClientId }}
                     >
@@ -205,7 +205,7 @@ export default function OrderDetails({
                 {session?.user.isAdmin && (
                   <li>
                     <button
-                      className="btn w-full my-2"
+                      className="btn w-full my-2 hover:text-pink-700"
                       onClick={() => deliverOrder()}
                       disabled={isDelivering}
                     >

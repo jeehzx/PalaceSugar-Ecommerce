@@ -102,7 +102,7 @@ const Menu = () => {
           >
             <div className="card-body">
               <span className="text-lg font-bold">{totalItems} Items</span>
-              <span className="text-info">
+              <span className="text-pink-700">
                 Subtotal: ${totalPrice.toFixed(2)}
               </span>
               <div className="card-actions">
@@ -135,7 +135,7 @@ const Menu = () => {
             {session && session.user ? (
               <>
                 <li>
-                  <div className="dropdown dropdown-bottom dropdown-end">
+                  <div className="dropdown dropdown-bottom">
                     <label tabIndex={0} className="flex text-2xl gap-2">
                       Hello, {session.user.name}
                       <svg

@@ -44,7 +44,7 @@ const Form = () => {
   return (
     <div className="max-w-sm  mx-auto card bg-base-300 my-4">
       <div className="card-body">
-        <h1 className="card-title">Sign in</h1>
+        <h1 className="card-title text-pink-700 text-3xl">Sign in</h1>
         {params.get('error') && (
           <div className="alert text-error">
             {params.get('error') === 'CredentialsSignin'
@@ -108,7 +108,10 @@ const Form = () => {
         <div className="divider"></div>
         <div>
           Need an account?{' '}
-          <Link className="link" href={`/register?callbackUrl=${callbackUrl}`}>
+          <Link
+            className="link hover:text-pink-700"
+            href={`/register?callbackUrl=${callbackUrl}`}
+          >
             Register
           </Link>
         </div>

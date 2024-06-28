@@ -22,10 +22,10 @@ export default function CartDetails() {
         <div className="mt-8">
           Cart is empty
           <div className="mt-20">
-            <p className="hover:text-purple-700">
+            <p className="hover:text-pink-700">
               <Link href="/search?category=all&q=">Back to Categories</Link>
             </p>
-            <p className="hover:text-purple-700 my-2">
+            <p className="hover:text-pink-700 my-2">
               <Link href="/">Back to Home</Link>
             </p>
           </div>
@@ -36,9 +36,9 @@ export default function CartDetails() {
             <table className="table">
               <thead>
                 <tr>
-                  <th>Item:</th>
-                  <th>Quantity:</th>
-                  <th>Price:</th>
+                  <th className='text-pink-700'>Item:</th>
+                  <th className='text-pink-700'>Quantity:</th>
+                  <th className='text-pink-700'>Price:</th>
                 </tr>
               </thead>
               <tbody>
@@ -104,10 +104,10 @@ export default function CartDetails() {
             </div>
           </div>
           <div className="my-2">
-            <p className="hover:text-purple-700">
+            <p className="hover:text-pink-700">
               <Link href="/search?category=all&q=">Back to Categories</Link>
             </p>
-            <p className="hover:text-purple-700 my-2">
+            <p className="hover:text-pink-700 my-2">
               <Link href="/">Back to Home</Link>
             </p>
           </div>

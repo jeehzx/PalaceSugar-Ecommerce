@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+E-commerce (PalaceSugar)
+Este é um projeto de e-commerce desenvolvido utilizando Next.js, MongoDB, Cloudinary, DaisyUI, Zustand, Bcrypt.js e NextAuth. O objetivo deste projeto é criar uma plataforma online para venda de produtos de moda e decoração de casa de maneira prática e eficiente.
 
-## Getting Started
+Tecnologias Utilizadas
+Next.js 14: Framework React para renderização do lado do servidor (SSR) e geração de sites estáticos (SSG).
+MongoDB: Banco de dados NoSQL para armazenamento de informações de produtos, usuários e pedidos.
+Cloudinary: Serviço de hospedagem de imagens e gerenciamento de ativos estáticos.
+DaisyUI: Framework CSS para Tailwind CSS que facilita a criação de interfaces responsivas e estilizadas.
+Zustand: Biblioteca para gerenciamento de estado global em aplicações React de forma simples e eficiente.
+Bcrypt.js: Biblioteca para criptografar senhas de usuário antes de armazená-las no banco de dados.
+NextAuth: Biblioteca de autenticação para Next.js que suporta vários provedores de autenticação (OAuth, JWT, etc.).
+Funcionalidades Principais
+Autenticação de Usuários: Registro e login seguros utilizando NextAuth.
+Catálogo de Produtos: Exibição de produtos de moda e decoração com imagens hospedadas no Cloudinary.
+Carrinho de Compras: Funcionalidade para adicionar produtos ao carrinho e realizar pedidos.
+Gestão de Estado: Utilização do Zustand para gerenciar o estado global da aplicação de forma eficiente.
+Segurança: Senhas dos usuários são criptografadas utilizando Bcrypt.js antes de serem armazenadas no MongoDB.
 
-First, run the development server:
+- Como Executar o Projeto
+  Pré-requisitos
+  Node.js e npm instalados globalmente.
+  Conta no MongoDB e Cloudinary para configurar as chaves de acesso.
+  Instalação
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Clone o repositório:
+   bash
+   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   cd nome-do-repositorio
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Instale as dependências:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+bash
+npm install
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+3. Configure as variáveis de ambiente:
 
-## Learn More
+Renomeie o arquivo .env.example para .env e preencha com suas credenciais do MongoDB e Cloudinary.
 
-To learn more about Next.js, take a look at the following resources:
+4. Executando o Projeto
+   bash
+   npm run dev
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Acesse http://localhost:3000 no seu navegador para visualizar o projeto.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Contribuições
+Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request com melhorias ou correções.

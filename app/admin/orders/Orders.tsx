@@ -10,18 +10,18 @@ export default function Orders() {
 
   return (
     <div>
-      <h1 className="py-4 text-2xl">Orders</h1>
+      <h1 className="py-4 text-2xl font-bold">Orders</h1>
       <div className="overflow-x-auto">
         <table className="table">
           <thead>
             <tr>
-              <th>ID</th>
-              <th>USER</th>
-              <th>DATE</th>
-              <th>TOTAL</th>
-              <th>PAID</th>
-              <th>DELIVERED</th>
-              <th>ACTION</th>
+              <th className="text-pink-700">ID</th>
+              <th className="text-pink-700">USER</th>
+              <th className="text-pink-700">DATE</th>
+              <th className="text-pink-700">TOTAL</th>
+              <th className="text-pink-700">PAID</th>
+              <th className="text-pink-700">DELIVERED</th>
+              <th className="text-pink-700">ACTION</th>
             </tr>
           </thead>
           <tbody>
@@ -42,7 +42,11 @@ export default function Orders() {
                     : 'not delivered'}
                 </td>
                 <td>
-                  <Link href={`/order/${order._id}`} passHref>
+                  <Link
+                    href={`/order/${order._id}`}
+                    className="hover:text-pink-700"
+                    passHref
+                  >
                     Details
                   </Link>
                 </td>

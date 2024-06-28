@@ -85,7 +85,9 @@ export default function UserEditForm({ userId }: { userId: string }) {
 
   return (
     <div>
-      <h1 className="text-2xl py-4">Edit User {formatId(userId)}</h1>
+      <h1 className="text-2xl py-4 font-bold text-pink-700 tracking-wiser">
+        Edit User {formatId(userId)}
+      </h1>
       <div>
         <form onSubmit={handleSubmit(formSubmit)}>
           <FormInput name="Name" id="name" required />
@@ -99,7 +101,7 @@ export default function UserEditForm({ userId }: { userId: string }) {
               <input
                 id="isAdmin"
                 type="checkbox"
-                className="toggle"
+                className="toggle hover:text-pink-700"
                 {...register('isAdmin')}
               />
             </div>

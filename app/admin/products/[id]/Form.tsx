@@ -122,7 +122,9 @@ export default function ProductEditForm({ productId }: { productId: string }) {
 
   return (
     <div>
-      <h1 className="text-2xl py-4">Edit Product {formatId(productId)}</h1>
+      <h1 className="text-2xl py-4 font-bold text-pink-700 tracking-wider">
+        Edit Product {formatId(productId)}
+      </h1>
       <div>
         <form onSubmit={handleSubmit(formSubmit)}>
           <FormInput name="Name" id="name" required />
@@ -135,7 +137,7 @@ export default function ProductEditForm({ productId }: { productId: string }) {
             <div className="md:w-4/5">
               <input
                 type="file"
-                className="file-input w-full max-w-md"
+                className="file-input w-full max-w-md hover:text-pink-700"
                 id="imageFile"
                 onChange={uploadHandler}
               />
@@ -150,7 +152,7 @@ export default function ProductEditForm({ productId }: { productId: string }) {
           <button
             type="submit"
             disabled={isUpdating}
-            className="btn btn-primary"
+            className="btn btn-primary my-4"
           >
             {isUpdating && <span className="loading loading-spinner"></span>}
             Update

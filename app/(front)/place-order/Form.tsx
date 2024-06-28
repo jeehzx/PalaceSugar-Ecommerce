@@ -76,7 +76,9 @@ const Form = () => {
         <div className="overflow-x-auto md:col-span-3">
           <div className="card bg-base-300">
             <div className="card-body">
-              <h2 className="card-title">Shipping Address</h2>
+              <h2 className="card-title text-pink-700 text-2xl">
+                Shipping Address
+              </h2>
               <p>{shippingAddress.fullName}</p>
               <p>
                 {shippingAddress.address}, {shippingAddress.city},{' '}
@@ -91,7 +93,9 @@ const Form = () => {
           </div>
           <div className="card bg-base-300 mt-4">
             <div className="card-body">
-              <h2 className="card-title">Payment Method</h2>
+              <h2 className="card-title text-2xl text-pink-700">
+                Payment Method
+              </h2>
               <p>{paymentMethod}</p>
               <div>
                 <Link className="btn" href="/payment">
@@ -102,13 +106,13 @@ const Form = () => {
           </div>
           <div className="card bg-base-300 mt-4">
             <div className="card-body">
-              <h2 className="card-title">Items</h2>
+              <h2 className="card-title text-2xl text-pink-700">Items</h2>
               <table className="table ">
                 <thead>
                   <tr>
-                    <th>Item</th>
-                    <th>Quantity</th>
-                    <th>Price</th>
+                    <th className="text-pink-700">Item</th>
+                    <th className="text-pink-700">Quantity</th>
+                    <th className="text-pink-700">Price</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -149,7 +153,9 @@ const Form = () => {
         <div>
           <div className="card bg-base-300">
             <div className="card-body">
-              <h2 className="card-title">Order Summary</h2>
+              <h2 className="card-title text-pink-700 text-2xl">
+                Order Summary
+              </h2>
               <ul className="space-y-3">
                 <li>
                   <div className=" flex justify-between">
@@ -171,7 +177,7 @@ const Form = () => {
                 </li>
                 <li>
                   <div className=" flex justify-between">
-                    <div>Total</div>
+                    <div >Total</div>
                     <div>$ {totalPrice}</div>
                   </div>
                 </li>

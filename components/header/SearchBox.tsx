@@ -13,15 +13,15 @@ export const SearchBox = () => {
   if (error) return error.message
   if (!categories) return 'Loading...'
   return (
-    <form action="/search" method="GET" className="gap-2">
+    <form action="/search" method="GET">
       <div className="join">
         <input
-          className="join-item input input-bordered w-48"
+          className="join-item input input-bordered w-48 max-sm:hidden"
           placeholder="Search"
           defaultValue={q}
           name="q"
         />
-        <button className="join-item btn">
+        <button className="md:join-item btn max-sm:btn-circle max-sm:btn-ghost">
           <IoMdSearch size={24} />
         </button>
       </div>

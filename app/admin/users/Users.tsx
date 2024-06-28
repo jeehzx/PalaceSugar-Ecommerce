@@ -37,17 +37,17 @@ export default function Users() {
 
   return (
     <div>
-      <h1 className="py-4 text-2xl">Users</h1>
+      <h1 className="py-4 text-2xl font-bold">Users</h1>
 
       <div className="overflow-x-auto">
         <table className="table table-zebra">
           <thead>
             <tr>
-              <th>id</th>
-              <th>name</th>
-              <th>email</th>
-              <th>admin</th>
-              <th>actions</th>
+              <th className="text-pink-700">id</th>
+              <th className="text-pink-700">name</th>
+              <th className="text-pink-700">email</th>
+              <th className="text-pink-700">admin</th>
+              <th className="text-pink-700">actions</th>
             </tr>
           </thead>
           <tbody>
@@ -62,7 +62,7 @@ export default function Users() {
                   <Link
                     href={`/admin/users/${user._id}`}
                     type="button"
-                    className="btn btn-ghost btn-sm"
+                    className="btn btn-ghost btn-sm hover:text-pink-700"
                   >
                     Edit
                   </Link>
@@ -70,7 +70,7 @@ export default function Users() {
                   <button
                     onClick={() => deleteUser({ userId: user._id })}
                     type="button"
-                    className="btn btn-ghost btn-sm"
+                    className="btn btn-ghost btn-sm hover:text-pink-700"
                   >
                     Delete
                   </button>

@@ -73,7 +73,9 @@ const Form = () => {
   return (
     <div className="max-w-sm mx-auto card bg-base-300 my-4">
       <div className="card-body">
-        <h1 className="card-title"> Register </h1>
+        <h1 className="card-title text-3xl text-pink-700 font-bold">
+          Register
+        </h1>
         <form onSubmit={handleSubmit(formSubmit)}>
           <div className="my-1">
             <label htmlFor="name" className="label">
@@ -163,7 +165,7 @@ const Form = () => {
         <div className="divider mt-0"></div>
         <div>
           Already has a account?
-          <Link className="link ml-5" href={`/signin`}>
+          <Link className="link ml-5 hover:text-pink-700" href={`/signin`}>
             Log In
           </Link>
         </div>
