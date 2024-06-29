@@ -90,6 +90,19 @@ export default function ProductEditForm({ productId }: { productId: string }) {
 
   return (
     <div>
+      <div className="border-t my-6 border-pink-300 w-80 mx-auto"></div>
+
+      <div className="my-4">
+        To be able to test this part of the website, in the <b>Image part</b>{' '}
+        you need to enter the address of a photo that is located in the{' '}
+        <b>public/images</b> folder on <b>github</b>. <p>Example:</p>
+        <form name="Image" id="image">
+          Image: <input type="text" placeholder=" /images/paws1.jpg" />
+        </form>
+      </div>
+
+      <div className="border-t my-6 border-pink-300 w-80 mx-auto"></div>
+
       <h1 className="text-2xl py-4 font-bold text-pink-700 tracking-wider">
         Edit Product {formatId(productId)}
       </h1>
