@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: process.env.NEXT_PUBLIC_APP_NAME,
   description:
     process.env.NEXT_PUBLIC_APP_DESC ||
-    'Nextjs, Server components, Next auth, daisyui, zustand',
+    'Nextjs, Server Components, NextAuth, Daisyui, Zustand',
 }
 
 export default async function Home() {
