@@ -101,18 +101,6 @@ const data = {
       countInStock: 20,
       description: 'A popular crocs',
     },
-    {
-      name: 'Blueesh - Long Sleeve Shirt',
-      slug: 'Blueeshlsleeve',
-      category: 'Clothes',
-      image: '/images/blueesh2.jpg',
-      price: 40,
-      brand: 'Blueesh',
-      rating: 2.4,
-      numReviews: 14,
-      countInStock: 20,
-      description: 'A popular shirt from Blueesh, good for winter',
-    },
   ],
 }
 
