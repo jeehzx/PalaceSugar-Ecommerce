@@ -1,6 +1,6 @@
 ## E-commerce Website (**PalaceSugar**)
 
-I'm beginner web dev, this is an e-commerce project developed ugitsing Next.js, MongoDB, DaisyUI, Zustand, Bcrypt.js, and NextAuth. The goal of this project is to create an online platform for selling.
+I'm beginner web dev, this is an e-commerce project developed using Next.js, MongoDB, DaisyUI, Zustand, Bcrypt.js, and NextAuth. The goal of this project is to create an online platform for selling.
 
 ## Technologies Used
 
@@ -29,9 +29,8 @@ I'm beginner web dev, this is an e-commerce project developed ugitsing Next.js, 
 ```
 
 **2. Create .env File**
+
 - You can copy .env.example and rename it to .env and change to your personal settings.
-
-
 
 ## Contributions
 
