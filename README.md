@@ -24,7 +24,7 @@ I'm beginner web dev, this is an e-commerce project developed ugitsing Next.js, 
 **1. Clone the Repository**
 
 ```shell
- $ git clone
+ $ git clone git@github.com:jeehzx/PalaceSugar-Ecommerce.git
  $ cd PalaceSugar-Ecommerce
 ```
 
