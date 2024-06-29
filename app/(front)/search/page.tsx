@@ -10,12 +10,8 @@ const prices = [
     value: '1-50',
   },
   {
-    name: '$51 to $200',
-    value: '51-200',
-  },
-  {
-    name: '$201 to $1000',
-    value: '201-1000',
+    name: '$51 to $230',
+    value: '51-230',
   },
 ]
 
