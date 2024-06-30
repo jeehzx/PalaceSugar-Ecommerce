@@ -23,7 +23,7 @@ export default function RootLayout({
               <div className="min-h-screen flex flex-col">
                 <Header />
                 {children}
-                <footer className="footer footer-center p-4 bg-base-300 text-base-content flex justify-between">
+                <footer className="footer footer-center p-4 bg-base-300 text-base-content flex justify-between w-full bottom-0">
                   <p className=" align-center ">
                     Copyright © 2024 - All right reserved by{' '}
                     {process.env.NEXT_PUBLIC_APP_NAME}
