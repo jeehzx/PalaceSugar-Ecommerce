@@ -23,7 +23,8 @@ export default function RootLayout({
               <div className="min-h-screen flex flex-col">
                 <Header />
                 <main className="flex-grow">{children}</main>
-                <footer className="footer footer-center p-4 bg-base-300 text-base-content flex justify-between items-center">
+                <footer className="py-4 bg-base-300 text-base-content flex 
+                justify-between items-center footer">
                   <p className="text-center">
                     Copyright © 2024 - All right reserved by{' '}
                     {process.env.NEXT_PUBLIC_APP_NAME}
