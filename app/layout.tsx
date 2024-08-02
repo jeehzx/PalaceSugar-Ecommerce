@@ -1,17 +1,18 @@
-import './globals.css'
-import { Inter } from 'next/font/google'
-import Header from '@/components/header/header'
-import Providers from '@/components/Providers'
-import Sidebar from '@/components/Sidebar'
-import DrawerButton from '@/components/DrawerButton'
-import { FaAngleUp } from 'react-icons/fa'
+import "./globals.css";
+import { Inter } from "next/font/google";
+import Header from "@/components/header/header";
+import Providers from "@/components/Providers";
+import Sidebar from "@/components/Sidebar";
+import DrawerButton from "@/components/DrawerButton";
+import { FaAngleUp } from "react-icons/fa";
+import React from "react";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
@@ -23,20 +24,20 @@ export default function RootLayout({
               <div className="min-h-screen flex flex-col">
                 <Header />
                 <main className="flex-grow">{children}</main>
-                <footer className="py-4 bg-base-300 text-base-content flex 
-                justify-between items-center footer">
-                  <p className="text-center">
-                    Copyright © 2024 - All right reserved by{' '}
-                    {process.env.NEXT_PUBLIC_APP_NAME}
+                <footer className="mt-14 w-full rounded-lg shadow flex flex-col items-center sm:flex-row sm:justify-between p-4 sm:p-6">
+                  <p className="mb-4 text-sm text-center text-gray-500 dark:text-gray-400 sm:mb-0">
+                    &copy; 2024 All rights reserved.
                   </p>
-                  <a
-                    href="#top"
-                    className="btn btn-circle bottom circle active hover:invert"
-                    id="top-link"
-                    aria-label="Go to top"
-                  >
-                    <FaAngleUp size={24} />
-                  </a>
+                  <div className="flex justify-center items-center space-x-4">
+                    <a
+                      href="#top"
+                      className="btn btn-circle hover:invert"
+                      id="top-link"
+                      aria-label="Go to top"
+                    >
+                      <FaAngleUp size={24} />
+                    </a>
+                  </div>
                 </footer>
               </div>
             </div>
@@ -52,5 +53,5 @@ export default function RootLayout({
         </Providers>
       </body>
     </html>
-  )
+  );
 }
